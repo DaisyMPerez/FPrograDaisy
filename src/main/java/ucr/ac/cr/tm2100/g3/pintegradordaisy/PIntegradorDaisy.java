@@ -11,6 +11,6 @@ package ucr.ac.cr.tm2100.g3.pintegradordaisy;
 public class PIntegradorDaisy {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        //A
     }
 }
