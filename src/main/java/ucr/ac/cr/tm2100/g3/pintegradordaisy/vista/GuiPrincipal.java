@@ -4,19 +4,27 @@
  */
 package ucr.ac.cr.tm2100.g3.pintegradordaisy.vista;
 
+import ucr.ac.cr.tm2100.g3.pintegradordaisy.controlador.ControladorPrnc;
+
 /**
  *
- * @author Lenovo
+ * @author ucr.ac.cr.tm2100G3
  */
 public class GuiPrincipal extends javax.swing.JFrame {
-
+    
     /**
      * Creates new form GuiPrincipal
      */
-    public GuiPrincipal() {
+    public GuiPrincipal(ControladorPrnc controlador) {
         initComponents();
+        escuchar(controlador);
     }
-
+    
+    public void escuchar (ControladorPrnc controlador) {
+        btnInst.addActionListener(controlador);
+        btnJugar.addActionListener(controlador);
+        btnSalir.addActionListener(controlador);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -26,28 +34,31 @@ public class GuiPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnInst = new javax.swing.JButton();
+        btnJugar = new javax.swing.JButton();
+        btnSalir = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("jLabel1");
+        btnInst.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnI.png"))); // NOI18N
+        btnInst.setActionCommand("instrucciones");
+        btnInst.setContentAreaFilled(false);
+        getContentPane().add(btnInst, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 190, 360, 110));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(346, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(273, Short.MAX_VALUE))
-        );
+        btnJugar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnG.png"))); // NOI18N
+        btnJugar.setActionCommand("jugar");
+        btnJugar.setContentAreaFilled(false);
+        getContentPane().add(btnJugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 430, 340, 110));
+
+        btnSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/btnS.png"))); // NOI18N
+        btnSalir.setActionCommand("salir");
+        btnSalir.setContentAreaFilled(false);
+        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 670, 320, 110));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/pantallaInicio.png"))); // NOI18N
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -55,39 +66,11 @@ public class GuiPrincipal extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GuiPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GuiPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GuiPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GuiPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new GuiPrincipal().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnInst;
+    private javax.swing.JButton btnJugar;
+    private javax.swing.JButton btnSalir;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
