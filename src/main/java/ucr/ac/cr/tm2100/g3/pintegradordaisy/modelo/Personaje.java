@@ -6,7 +6,7 @@ package ucr.ac.cr.tm2100.g3.pintegradordaisy.modelo;
 
 /**
  *
- * @author rossm
+ * @author Daisy
  */
 public class Personaje {
     

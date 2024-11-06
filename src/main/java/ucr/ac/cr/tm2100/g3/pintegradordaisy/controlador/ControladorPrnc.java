@@ -12,7 +12,7 @@ import ucr.ac.cr.tm2100.g3.pintegradordaisy.vista.GuiPrincipal;
 
 /**
  *
- * @author ucr.ac.cr.tm2100G3
+ * @author Daisy
  */
 public class ControladorPrnc implements ActionListener{
     

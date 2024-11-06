@@ -13,7 +13,7 @@ import ucr.ac.cr.tm2100.g3.pintegradordaisy.modelo.Personaje;
 
 /**
  *
- * @author rossm
+ * @author Daisy
  */
 public class PanelJuego extends javax.swing.JPanel {
 

@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 
 /**
  *
- * @author Lenovo
+ * @author Daisy
  */
 public class GuiInstr extends javax.swing.JFrame {
 

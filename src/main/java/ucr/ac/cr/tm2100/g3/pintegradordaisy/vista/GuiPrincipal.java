@@ -8,7 +8,7 @@ import ucr.ac.cr.tm2100.g3.pintegradordaisy.controlador.ControladorPrnc;
 
 /**
  *
- * @author ucr.ac.cr.tm2100G3
+ * @author Daisy
  */
 public class GuiPrincipal extends javax.swing.JFrame {
     

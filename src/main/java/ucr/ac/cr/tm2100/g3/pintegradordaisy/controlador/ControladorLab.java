@@ -6,7 +6,7 @@ package ucr.ac.cr.tm2100.g3.pintegradordaisy.controlador;
 
 /**
  *
- * @author rossm
+ * @author Daisy
  */
 public class ControladorLab {
     

@@ -8,7 +8,7 @@ import java.util.Random;
 
 /**
  *
- * @author rossm
+ * @author Daisy
  */
 public class Enemigo {
     
